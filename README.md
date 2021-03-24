@@ -23,7 +23,7 @@ Site estático com aplicação de Bootstrap.
 ## Deploy
 
 <p align="justify">
-  O deploy do projeto foi realizado no surge e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh">elfin-protest.surge.sh</a></b>
+  O deploy do projeto foi realizado no vercel e encontra-se disponivel em: <b><a target="blank href="https://caravan-cyan.vercel.app/">caravan</a></b>
 </p>
 
 ## Como rodar a aplicação :arrow_forward:
