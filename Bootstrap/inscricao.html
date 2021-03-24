@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Caravan</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <link rel ="stylesheet" href="css/bootstrap.css">
+      <link rel ="stylesheet" href="css/style.css">
+    </head>
+    <body>
+     
+    <!-- Modal -->
+     <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLoginTitulo">Entre na sua conta</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="inputLoginEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputLoginEmail">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputSenhaLogin" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="inputSenhaLogin">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Entrar na conta</button>
+                  <div class="form-text text-muted">Esqueceu a senha? <a style="text-decoration: none" href="#">Clique aqui</a>.</div>
+                </form>
+            </div>
+          </div>
+          </div>
+      </div>
+      <!-- Modal -->
+      
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top  box-shadow">
+        <a href='index.html' class='navbar-brand  ms-2'>
+          <img src='img/caravan.svg' alt='Caravan'>
+        </a>
+        
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-2">
+           <li class="nav-item dropdown">
+             <a class="nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">California</a> 
+                <a class="dropdown-item" href="#">Paris</a> 
+                <a class="dropdown-item" href="local.html">Dublin</a>  
+             </div>
+           </li> 
+           <li class="nav-item">
+             <a class="nav-link" href="planos.html">Planos</a>
+           </li> 
+            <li class="nav-item">
+             <a class="nav-link" href="contato.html">Contato</a>
+           </li> 
+            <li class="nav-item">
+             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+           </li>
+           <li class="nav-item">
+             <a class="btn btn-outline-primary ms-md-2 active" href="inscricao.html">Inscreva-se
+             </a>
+           </li>    
+          </ul>       
+        </div>
+      </nav>
+      
+      <section class="container">
+        <div class="my-5 text-center">
+          <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
+          <h1 class="display-4 text-primary">Inscreva-se</h1>
+        </div>
+        <div class="row mb-2">
+          <form class="col-lg-6 mb-2" action="">
+            <div class="row g-3">
+              <div class="form-group col-md-6 mb-1">
+                <label type="text" for="inputNome">Nome</label>
+                 <input type="text" class="form-control" id="inputNome" placeholder="Nome completo">   
+              </div>
+              <div class="form-group col-md-6 mb-1">
+                <label type="text" for="inpuCPF">CPF</label>
+                <input type="text" class="form-control" id="inputCPF" placeholder="XXX.XXX.XXX-XX">   
+              </div>
+                 <div class="form-group col-md-6 mb-1">
+                <label type="text" for="inpuEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Seu email">   
+              </div>
+              <div class="form-group col-md-6 mb-1">
+                <label type="text" for="inpuSenha">Senha</label>
+                <input type="password" class="form-control" id="inputSenha" placeholder="Senha de acesso">   
+              </div>
+              <div class="form-group col-12 mb-1">
+                <label type="text" for="inputEndereco">Endereço</label>
+                <input type="text" class="form-control" id="inputEndereco" placeholder="Número, nome da rua e bairro">   
+              </div>
+              <div class="form-group col-md-6 mb-1">
+                <label type="text" for="inputCidade">Cidade</label>
+                <input type="password" class="form-control" id="inputCidade">   
+              </div>
+              <div class="form-group col-md-3 col-6 mb-1">
+                <label type="text" for="inputEstado">Estado</label>
+                <select id="inputEstado" class="form-select">
+                  <option selected>Selecione o Estado</option>
+                  <option>Rio de Janeiro</option>
+                  <option>São Paulo</option>
+                  <option>Paraná</option>
+                  <option>Minas Gerais</option>
+                </select>  
+              </div>
+              <div class="form-group col-md-3 col-6 mb-1">
+                <label type="text" for="inputCEP">CEP</label>
+                <input type="password" class="form-control" id="inputCEP">   
+              </div>
+            </div>
+              
+              <div class="bg-light rounded box-shadow p-3 form-group my-3">
+                <h2 class="text-primary h6">FORMA DE PAGAMENTO</h2>
+                <nav class="nav btn-group mt-3" id="formaPagamento" role="tablist">
+                  <button type="button" class="btn btn-secondary btn-sm active" id="nav-cartao-tab" data-bs-toggle="tab" href="#nav-cartao" role="tab" aria-controls="nav-cartao" aria-selected="true">Cartão de Crédito</button>
+                  <button type="button" class="btn btn-secondary btn-sm" id="nav-boleto-tab" data-bs-toggle="tab" href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto Bancário</button>
+                </nav>
+                <div class="tab-content" id="formaPagamentoConteudo">
+                 <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+                  <div class="row g-3 my-1">
+                    <div class="form-group col-md-6">
+                      <label type="text" for="inputNomeCartao">Nome no cartão</label>
+                      <input type="text" class="form-control" id="inputNomecartao" placeholder="Nome impresso no cartão">   
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                      <label type="text" for="inputMesCartao">Mês</label>
+                      <select id="inputMesCartao" class="form-select">
+                        <option selected>Expira mês...</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                      </select>  
+                   </div>
+                   <div class="form-group col-md-3 col-6">
+                      <label type="text" for="inputAnoCartao">Ano</label>
+                      <select id="inputAnoCartao" class="form-select">
+                        <option selected>Expira ano...</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                      </select>  
+                   </div>
+                   <div class="form-group col-md-6">
+                     <label type="text" for="inputNumeroCartao">Número do Cartão</label>
+                     <input type="text" class="form-control" id="inputNumerocartao" placeholder="1111 1111 1111 1111">   
+                  </div>
+                  <div class="form-group col-md-6">
+                     <label type="text" for="inputCodigo">Código de Segurança</label>
+                     <input type="text" class="form-control" id="inputCodigo" placeholder="XXX">   
+                  </div>
+                  </div>
+                 </div>
+                 <div class="tab-pane fade" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+                  <p class="pt-2">
+                      Clique em contratar plano que enviaremos um boleto para o seu email.
+                  </p>
+                 </div>   
+                </div> 
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Concordo com os <a style="text-decoration: none" href="#">Termos e Condições</a>
+                </label>
+             </div>
+             <button type="submit" class="btn btn-primary btn-lg">Contratar Plano</button >
+          </form>
+          
+          <div class="col-lg-5 mx-auto order-first order-lg-1">
+           <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+           <div class="bg-light rounded p-4 box-shadow">
+             <h2>Gold</h2>
+             <ul class="list-unstyled lista">
+                <li>→ 60 dias de viagem</li>
+                <li>→ 6 destinos diferentes</li>
+                <li>→ Tudo pago pela empresa</li>
+                <li>→ Ingressos para festas</li>
+             </ul>
+             <form>
+              <div class="input-group mb-3">
+                  <select class="form-select bg-light" id="inputCidades">
+                    <option>Selecione a cidade</option>
+                    <option>California</option>
+                    <option>Paris</option>
+                    <option>Dublin</option>
+                  </select>
+              </div>
+            </form>
+            <div class="row mt-4">
+              <div class="col">
+                <span class="h4">R$ 9.000</span> 
+              </div>      
+            </div>
+           </div>
+          </div>
+        </div>
+     </section>
+       
+      <footer class="bg-dark text-white">
+         <div class="container py-4">
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <h4 class="h6">PÁGINAS</h4>
+                <ul class="list-unstyled">
+                  <li><a style="text-decoration: none" href="planos.html">Planos</a></li>
+                  <li><a style="text-decoration: none" href="conatos.html">Contatos</a></li>
+                  <li><a style="text-decoration: none" href="inscricao.html">Inscreva-se</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-6">
+                <h4 class="h6">LOCAIS</h4>
+                <ul class="list-unstyled">
+                  <li><a style="text-decoration: none" href="local.html">California</a></li>
+                  <li><a style="text-decoration: none" href="local.html">Paris</a></li>
+                  <li><a style="text-decoration: none" href="local.html">Dublin</a></li>
+                </ul>
+              </div>
+             <div class="col-md-4" id="contact">
+                <h4 class="h6">DADOS DE CONTATO</h4>
+                <ul class="list-unstyled text-secondary" >
+                  <li>erikaskarda@yahoo.com.br</li>
+                  <li>(11) 94484-6258</li>
+                  <li>De Seg à Sex das 8h às 18h</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h4 class="h6">REDES SOCIAIS</h4>
+                <ul class="list-unstyled" text-secondary>
+                    <li><a style="text-decoration: none; max-width: 140px" class="btn btn-outline-secondary mb-2 btn-sm btn-block" href="https://www.linkedin.com/in/erika-skarda/" target="blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg> Linkedin
+                    </a></li>
+                    <li><a style="text-decoration: none; max-width: 140px" class="btn btn-outline-secondary mb-2 btn-sm btn-block" href="https://github.com/Erika-Skarda" target="blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg> GitHub
+                    </a></li>
+                    <li><a style="text-decoration: none; max-width: 140px" class="btn btn-outline-secondary mb-2 btn-sm btn-block"  href="https://api.whatsapp.com/send?phone=+5511944846258" target="blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                      </svg> WhatsApp
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+         </div>
+         <div class="bg-primary text-center py-3">
+            <p class="mb-0">Caravan © 2021. Alguns direitos reservados.</p>
+         </div>
+      </footer>
+      
+      <script type="text/javascript" src="js/bootstrap.bundle.min"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
