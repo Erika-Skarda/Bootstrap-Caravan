@@ -23,7 +23,7 @@ Site estático com aplicação de Bootstrap.
 ## Deploy
 
 <p align="justify">
-  O deploy do projeto foi realizado no vercel e encontra-se disponivel em: <b><a target="blank href="https://caravan-cyan.vercel.app/">caravan</a></b>
+  O deploy do projeto foi realizado no vercel e encontra-se disponível em: <b><a target="blank href="https://caravan-cyan.vercel.app/">Caravan</a></b>
 </p>
 
 ## Como rodar a aplicação :arrow_forward:
@@ -31,7 +31,7 @@ Site estático com aplicação de Bootstrap.
 No terminal, clone o projeto: 
 
 ```
-git clone https://github.com/Erika-Skarda/portfolio
+git clone https://github.com/Erika-Skarda/Bootstrap-Caravan
 ```
 Entre no projeto e instale as dependências através do comando:
 ```
