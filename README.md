@@ -24,6 +24,7 @@ Site estático com aplicação de Bootstrap.
 
 <p align="justify">
   O deploy do projeto foi realizado no vercel e encontra-se disponível em: <b><a target="blank href="https://caravan-cyan.vercel.app/index.html">https://caravan-cyan.vercel.app/index.html</a></b>
+      [Caravan](https://caravan-cyan.vercel.app/index.htmla)
 </p>
 
 ## Como rodar a aplicação :arrow_forward:
