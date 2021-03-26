@@ -9,7 +9,7 @@ https://www.loom.com/share/be9c1223a21140ce8631983d2a57b633
 </br>
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=html&message=framework&color=red&style=for-the-badge&logo=HTML" />
-    <img src="https://img.shields.io/static/v1?label=Javascript&message=framework&color=yellow&style=for-the-badge&logo=JAVASCRIPT" />
+    <img src="https://img.shields.io/static/v1?label=Javascript&message=library&color=yellow&style=for-the-badge&logo=JAVASCRIPT" />
     <img src="https://img.shields.io/static/v1?label=bootstrap&message=library&color=purple&style=for-the-badge&logo=BOOTSTRAP"/>
 </p>   
 </br>
